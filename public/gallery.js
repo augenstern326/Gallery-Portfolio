@@ -74,8 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 从服务器获取所有图片 URL
         fetch('/images')
-            //.then(response => response.json())
-            .then(response => console.log(response))
+            .then(response => response.json())
             .then(urls => {
                 imageUrls = urls;
                 updateColumns(); // Initial column update before loading images
