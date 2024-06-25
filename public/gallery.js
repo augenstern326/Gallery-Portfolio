@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(urls => {
                 imageUrls = urls;
                 updateColumns(); // Initial column update before loading images
-                loadNextImages();
+                //loadNextImages();
             })
             .catch(error => console.error('Error loading images:', error));
 
